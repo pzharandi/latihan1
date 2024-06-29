@@ -4,12 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Percobaan dengan revou</title>
+        <link rel="stylesheet" href="css/style.css">
         <style>
             h1 {
-                color: salmon;
+                color: red; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: bold;
             }
             table, th, td {
-                border: 1px solid black;
+                border: solid black;
+            }
+            div {
+                color: darkgray;
             }
         </style>
     </head>
@@ -30,5 +34,84 @@
                 <td colspan="2" align="center">20</td>
             </tr>
         </table>
+        <br/>
+        <h1>Contoh Anchor Link</h1>
+            <a href="http://www.google.co.id" target="_blank"><img src="../wall (4).png" width="300" height="200"></a>
+            <br/><br/>
+        <h2>Contoh Pembuatan Form</h2>
+            <form action="http://www.google.co.id" method="post" target="_blank">
+                <label for="name">Nama:<br></label>
+                <input id="name" type="text">
+                <br/>
+                <input type="password" required>
+                <br/>
+                <input type="checkbox">
+                <br/>
+                <input type="radio" id="orangutan" name="hewan">
+                <label for="orangutan">Orangutan</label>
+                <br/>
+                <input type="date">
+                <br/>
+                <label for="umur">Umur:</label>
+                <input id="umur" type="number" name="umur" min="1" max="100" ><br>
+                <textarea rows="5" cols="20">Ketik di sini</textarea>
+                <input type="submit" value="Submit">
+            </form>
+            <button type="button">
+                OK
+            </button>
+            <button type="button" onclick="doSomething();">
+                Apply
+            </button>
+            <br><br><br><br><br><br>
+        <h3>Contoh Pembuatan Option</h3>
+            <p>What is your race?</p>
+            <select>
+                <option value="1">Asian</option>
+                <option value="2">Black</option>
+                <option value="3">White</option>
+                <option value="4">SKibidi</option>
+            </select>
+            <br>
+            <p>How old are you?</p>
+            <select>
+                <optgroup label="1-100">
+                    <option>1-25</option>
+                    <option>26-70</option>
+                    <option>71-100</option>
+                </optgroup>
+                <optgroup label="infinity">
+                    <option value="1">infinity</option>
+                </optgroup>
+            </select>
+            <br>
+        <h2>Contoh radio button</h2>
+            <input type="radio" id="html" name="fav_language" label="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" label="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" label="JavaScript">
+            <label for="javascript">JavaScript</label><br>
+        <h2>Contoh Fieldset</h2>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="age">Age</label><br>
+                <input type="number" id="age" name="age" min="0"><br>
+            </fieldset><br><br>
+        <h2>Contoh Fieldset 2.0</h2>
+            <fieldset>
+                <legend>Data Diri</legend>
+                <p>
+                    <label for="nama">Nama:</label>
+                    <input type="text" name="nama">
+                    <label for="usia">Usia:</label>
+                    <input type="number" name="usia" min="0">
+            </fieldset>
+        <h1 style="color: black;">Contoh tag div</h1>
+            <div class="container">Division 1</div><br>
+            <div class="container">Division 2</div><br>
+        
     </body>
 </html>
